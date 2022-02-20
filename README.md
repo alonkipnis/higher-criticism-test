@@ -1,6 +1,7 @@
 # HCtest -- Higher Criticism Test
 
-Higher Criticism (HC) test statistics of P-values. 
+Higher Criticism (HC) test statistics for testing the global significance of many independent hypotheses. As an input, 
+the test receives a list of P-values and returns the HC test statistics. See (Donoho & Jin 2004)
 
 ## Example:
 ```
