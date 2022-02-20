@@ -5,16 +5,15 @@ the test receives a list of P-values and returns the HC test statistics. See (Do
 
 ## Example:
 ```
-import numpy as np
 from scipy.stats import norm
 
 n = 1000 #number of samples
 
-X = np.random.norm(n)
+X = norm.rvs(size=n)
 pvals = norm.sf(X)
 
 hc = HC(pvals)
-hv_val, p_th = HC.HCstar(alpha = 0.25)
+hc_val, p_th = hc.HCstar(gamma = 0.25)
 
 print("Higher-Criticism statistic = ", hc_val)
 ```
